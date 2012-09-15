@@ -1,0 +1,150 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="fa-ir">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>my prosnal blog</title>
+		<link rel="stylesheet" type="text/css" href="stylebg.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="lightbox.css" media="screen">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.lightbox-0.5.pack.js"></script>
+		<script type="text/javascript" src="js/cufon-yui.js"></script>
+		<script type="text/javascript" src="js/Desyrel_400.font.js"></script>
+			<script type="text/javascript">
+			$(document).ready(function(){
+				Cufon.replace('#about .right ul li');
+				Cufon.replace('h2', { textShadow: '0 2px rgba(0, 0, 0, 0.15)' });
+				Cufon.replace('#social .right a', {hover:true});
+				Cufon.replace('#work .left h3', {hover:true});
+				Cufon.replace('h3', { textShadow: '0 2px rgba(0, 0, 0, 0.15)' });
+				Cufon.replace('#contactinfo'), {hover:true};
+			});
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#work .right a').lightBox();
+			});
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.page').hide();
+				$('#navigation li:first').addClass('active').show();
+				$('.page:first').show();
+				
+				$('#navigation li').click(function(){
+					$('#navigation li').removeClass('active');
+					$(this).addClass('active');
+					
+					$('.page').hide();
+					var activeTab = $(this).find('a').attr('href');
+					$(activeTab).fadeIn('slow');
+					return false;
+				});
+			});
+		</script>
+
+	</head>
+	<body>
+		<div id="pagewrap">
+			<div id="header">
+				<ul id="navigation">
+					<li><a class="about" href="#about"><img src="images/icon-about.png" alt="About"></a></li>
+					<li><a class="work" href="#work">work</a></li>
+					<li><a class="social" href="#social"><img src="images/icon-social.png" alt="Social"></a></li>
+					<li><a class="contact" href="#contact"><img src="images/icon-contact.png" alt="Contact"></a></li>
+				</ul>
+			</div>
+			
+
+			<div id="content">
+				<div id="about" class="page">
+					<div class="left">
+						<img src="images/author-photo.png" alt="photo">
+					</div>
+					<div class="right">
+						<h2>hi ! welcome !!</h2>
+						<p>hi !! i am mohamad ali shiran khorasani ! im 16 years old ! im a developer ! you can find me in  <a href="#">this site</a>..</p>
+						<h3>Services I provide:</h3>
+						<ul>
+							<li><img src="images/icon-print.png" alt="Print Design">Print Design</li>
+							<li><img src="images/icon-webdesign.png" alt="Web Design">Web Design</li>
+							<li><img src="images/icon-development.png" alt="Development">Development</li>
+						</ul>
+					</div>
+				</div>
+
+				<div id="work" class="page">
+					<div class="left">
+						<img src="images/image-feature.jpg" alt="Featured project">
+						<h3><a href="#">Featured Project</a></h3>
+						<p>you can see my new work in this pic !!</p>
+					</div>
+					<div class="right">
+						<p>ok ! you can find my work in this page ! i hope you enjoy this page ! :)</p>
+						<h3>all Design:</h3>
+						<ul id="work01">
+							<li><a href="images/image01.jpg"><img src="images/logo01.jpg" alt="logo01"></a></li>
+							<li><a href="images/image02.jpg"><img src="images/logo02.png" alt="logo02"></a></li>
+							<li><a href="images/image03.jpg"><img src="images/logo03.png" alt="logo03"></a></li>
+							<li><a href="images/image04.jpg"><img src="images/logo04.png" alt="logo04"></a></li>
+						</ul>
+						<h3>Web Design:</h3>
+						<ul id="work02">
+							<li><a href="images/image05.jpg"><img src="images/web01.jpg" alt="web01"></a></li>
+							<li><a href="images/image06.jpg"><img src="images/web02.jpg" alt="web02"></a></li>
+							<li><a href="images/image07.jpg"><img src="images/web03.jpg" alt="web03"></a></li>
+							<li><a href="images/image08.jpg"><img src="images/web04.jpg" alt="web04"></a></li>
+						</ul>
+					</div>
+				</div>
+	
+				<div id="social" class="page">
+					<div class="left">
+						<p class="tweet-text">too you can find me in my github page! you can see my projects !!<br />i think you can enjoy in this page! <br /><br /><a href="https://github.com/matafa">my github pages !</a>.<br /><br />
+						too you can send mail for me: info@shirankhorasani.ir
+						</p>
+					</div>
+					<div class="right">
+						<ul>
+							<li class="facebook"><a href="http://www.facebook.com/mohamadshiran"><img src="images/icon-facebook.png" alt="facebook"> facebook</a></li>
+
+							<li class="flicer"><a href="https://github.com/matafa"><img src="images/icon-flickr.png" alt="github"> github</a></li>
+						</ul>
+						<p></p>
+					</div>
+				</div>
+	
+				<div id="contact" class="page">
+					<div class="left">
+					<h3>Drop me a note</h3>
+						<form method="post" action="contactengine.php">
+							<ul>
+								<li class="msgname"><label for="Name">Name: </label><input type="text" name="Name" id="Name"></li>
+								<li><label for="Email">E-mail: </label><input type="text" name="Email" id="Email"></li>
+								<li><label for="Message">Message: </label><textarea name="Message" id="Message" rows=2 cols=2></textarea></li>
+								<li><input class="send" type="submit" name="submit" value="Send"></li>
+							</ul>
+						</form>
+					</div>
+					<div class="right">
+						<p>ok ! its one page with php ! with it you can send leter for me ! ok?</p>
+						<p>thank for your visited !! </p>
+						<div id="contactinfo">
+							<p>Address Iran - mashhad</p>
+							<p></p>
+							<p><a href="#">info@shirankhorasani.ir</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="footer">
+			</div>
+		</div>
+	</body>
+
+	<!-- Begin WebGozar.com Counter code -->
+<script type="text/javascript" language="javascript" src="http://www.webgozar.ir/c.aspx?Code=2671486&amp;t=counter" ></script>
+<noscript><a href="http://www.webgozar.com/counter/stats.aspx?code=2671486" target="_blank">&#1570;&#1605;&#1575;&#1585;</a></noscript>
+<!-- End WebGozar.com Counter code -->
+</html>
