@@ -32,8 +32,9 @@
 
 ### The Team 
 - Teacher & Technical Manager [Mr.Ali Mihandoost](https://github.com/AliMD) 
-- Project Manager/ Developer/ Disigner [Mohamad Ali ShiranKhorasani](https://github.com/matafa)
-- Developer [Mohamad najafzade](https://www.github.com/mohammadn)
+- Developer [Mohamad najafzade](https://www.github.com/mohammadn) :)
+- Project Manager/ Developer/ Disigner [Mohamad Ali ShiranKhorasani](https://github.com/matafa) :)
+
 
 
 
